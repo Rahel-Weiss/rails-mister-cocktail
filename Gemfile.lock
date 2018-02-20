@@ -67,9 +67,6 @@ GEM
       activesupport (>= 4.2.0)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.7.0)
-      activesupport (>= 4.2.0)
-      multi_json (>= 1.2)
     jquery-rails (4.3.1)
       rails-dom-testing (>= 1, < 3)
       railties (>= 4.2.0)
@@ -87,7 +84,6 @@ GEM
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
     minitest (5.11.3)
-    multi_json (1.13.1)
     nio4r (2.2.0)
     nokogiri (1.8.2)
       mini_portile2 (~> 2.3.0)
@@ -208,7 +204,6 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   font-awesome-sass
-  jbuilder (~> 2.5)
   jquery-rails
   listen (>= 3.0.5, < 3.2)
   pg
@@ -226,6 +221,9 @@ DEPENDENCIES
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
   webpacker
+
+RUBY VERSION
+   ruby 2.4.3p205
 
 BUNDLED WITH
    1.16.1
