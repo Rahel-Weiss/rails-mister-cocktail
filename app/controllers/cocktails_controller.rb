@@ -17,10 +17,15 @@ class CocktailsController < ApplicationController
 
   def show
     @cocktail = Cocktail.find(params[:id])
+  end
 
+  def destroy
+    cocktail = Cocktail.find(cocktail_params[:cocktail])
+    cocktail.destroy
+    redirect_to cocktails
   end
 
   def cocktail_params
-    params.require(:cocktail).permit(:name)
+    params.require(:cocktail).permit(:name, :photo)
   end
 end

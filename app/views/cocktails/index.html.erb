@@ -1,5 +1,5 @@
-<div class="container text-center">
-  <h1>Cocktails Menu</h1>
+<div class="container text-center banner">
+  <h1>Cocktail Menu</h1>
   <p></p>
   <%= link_to 'add a cocktail', new_cocktail_path, class: "btn-outline-secondary" %>
 </div>
@@ -8,10 +8,16 @@
     <% @cocktails.each do |cocktail| %>
       <div class="col-xs-12 col-sm-4">
         <div class="card text-center">
+          <img class="cocktail-avitar"<%= cl_image_tag cocktail.photo, height: 150, width: 150, crop: :fill %>
+
+
           <h4> <%= cocktail.name %> </h4>
           <%= link_to 'Details', cocktail_path(cocktail) %>
         </div>
       </div>
     <% end %>
+  </div>
+  <div>
+
   </div>
 </div>

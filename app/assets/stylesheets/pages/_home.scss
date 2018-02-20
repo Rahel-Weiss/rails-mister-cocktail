@@ -1,5 +1,9 @@
 // Specific CSS for your home-page
-h1, h2, h3, h4, h5 {
+h1 {
+  color: $gray;
+}
+
+h5, h2, h3, h4,  {
   font-family: futura;
   color: #ffffff;
 }
@@ -8,8 +12,8 @@ p {
   color: #ffffff;
 }
 
-.card {
-  background-color: $gray;
+.banner {
+  margin: 5%;
 }
 
 body {
